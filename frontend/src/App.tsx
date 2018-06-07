@@ -5,7 +5,7 @@ import Sandbox from './components/Sandbox';
 class App extends React.Component {
   public render() {
     return (
-      <Sandbox />
+      <Sandbox foo={6} data={[]}/>
     );
   }
 }
