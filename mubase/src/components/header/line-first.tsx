@@ -31,11 +31,11 @@ const styles = (theme: Theme) => createStyles({
   avatar: {}
 })
 
-interface FirstLineProps extends WithStyles<typeof styles> {
+interface LineFirstProps extends WithStyles<typeof styles> {
   onDrawerToggle?: (event: React.MouseEvent<HTMLElement, MouseEvent>) => void
 }
 
-const FirstLine: React.FC<FirstLineProps> = ({ classes, onDrawerToggle }) => (
+const LineFirst: React.FC<LineFirstProps> = ({ classes, onDrawerToggle }) => (
   <AppBar color="primary" position="sticky" elevation={0}>
     <Toolbar>
       <Grid container spacing={8} alignItems="center">
@@ -71,4 +71,4 @@ const FirstLine: React.FC<FirstLineProps> = ({ classes, onDrawerToggle }) => (
 </AppBar>
 )
 
-export default withStyles(styles)(FirstLine)
+export default withStyles(styles)(LineFirst)
