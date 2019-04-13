@@ -27,4 +27,4 @@ const Header: React.FC<HeaderProps> = ({ classes, onDrawerToggle }) => {
   )
 }
 
-export default Header
+export default withStyles(styles)(Header)
